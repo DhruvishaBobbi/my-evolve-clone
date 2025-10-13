@@ -1,0 +1,106 @@
+import { Button } from "@/components/ui/button";
+import { Heart, Menu, X } from "lucide-react";
+import { useState } from "react";
+
+const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <>
+      {/* Top Banner */}
+      <div className="bg-secondary text-secondary-foreground py-3 text-center font-semibold text-sm md:text-base">
+        SAVE 50% WITH A YEARLY PLAN
+      </div>
+
+      {/* Navigation */}
+      <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo */}
+            <div className="flex items-center gap-2">
+              <Heart className="w-8 h-8 text-primary fill-primary" />
+              <span className="text-2xl font-bold text-secondary">EvolveYou</span>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#transformations" className="text-secondary hover:text-primary transition-colors font-medium">
+                Transformations
+              </a>
+              <a href="#programs" className="text-secondary hover:text-primary transition-colors font-medium">
+                Programs
+              </a>
+              <a href="#trainers" className="text-secondary hover:text-primary transition-colors font-medium">
+                Trainers
+              </a>
+              <a href="#support" className="text-secondary hover:text-primary transition-colors font-medium">
+                Support
+              </a>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="hidden md:flex items-center gap-4">
+              <Button variant="ghost" size="sm">
+                Login
+              </Button>
+              <Button size="sm">
+                Start Free Trial
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-secondary"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden border-t border-border bg-background">
+            <div className="px-4 py-4 space-y-3">
+              <a
+                href="#transformations"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                Transformations
+              </a>
+              <a
+                href="#programs"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                Programs
+              </a>
+              <a
+                href="#trainers"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                Trainers
+              </a>
+              <a
+                href="#support"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                Support
+              </a>
+              <div className="pt-4 space-y-2">
+                <Button variant="ghost" className="w-full">
+                  Login
+                </Button>
+                <Button className="w-full">
+                  Start Free Trial
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
+    </>
+  );
+};
+
+export default Navigation;
