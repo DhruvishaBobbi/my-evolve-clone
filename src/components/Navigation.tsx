@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import bobbiLogo from "@/assets/bobbi-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,8 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center gap-2">
-              <Heart className="w-8 h-8 text-primary fill-primary" />
-              <span className="text-2xl font-bold text-secondary">EvolveYou</span>
+            <div className="flex items-center gap-3">
+              <img src={bobbiLogo} alt="Bobbi" className="h-10 w-auto" />
             </div>
 
             {/* Desktop Navigation */}

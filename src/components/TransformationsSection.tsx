@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Sarah M.",
     result: "Lost 25 lbs in 3 months",
-    quote: "EvolveYou changed my life. The trainers are incredible and the community support kept me motivated every single day.",
+    quote: "Bobbi changed my life. The trainers are incredible and the community support kept me motivated every single day.",
   },
   {
     name: "Jessica L.",
@@ -31,7 +31,7 @@ const TransformationsSection = () => {
             Amazing Transformations
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            See what our community has achieved with EvolveYou
+            See what our community has achieved with Bobbi
           </p>
         </div>
 

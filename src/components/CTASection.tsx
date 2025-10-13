@@ -8,7 +8,7 @@ const CTASection = () => {
           Ready to Start Your Journey?
         </h2>
         <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-          Join 40,000+ women who are transforming their lives with EvolveYou. Start your free trial today.
+          Join 40,000+ women who are transforming their lives with Bobbi. Start your free trial today.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
           <Button size="lg" variant="secondary" className="text-base">

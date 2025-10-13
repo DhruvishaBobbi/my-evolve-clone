@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import bobbiLogo from "@/assets/bobbi-logo.png";
 
 const Footer = () => {
   return (
@@ -7,9 +7,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Heart className="w-8 h-8 text-primary fill-primary" />
-              <span className="text-2xl font-bold text-primary-foreground">EvolveYou</span>
+            <div className="flex items-center gap-3">
+              <img src={bobbiLogo} alt="Bobbi" className="h-10 w-auto" />
             </div>
             <p className="text-secondary-foreground/80 text-sm">
               Empowering women through strength training and wellbeing.
@@ -82,7 +81,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/80">
-          <p>© 2025 EvolveYou. All rights reserved.</p>
+          <p>© 2025 Bobbi. All rights reserved.</p>
         </div>
       </div>
     </footer>
