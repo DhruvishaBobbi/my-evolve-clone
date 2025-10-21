@@ -19,7 +19,9 @@ const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <img src={bobbiLogo} alt="Bobbi" className="h-10 w-auto" />
+              <a href="/" className="flex items-center">
+                <img src={bobbiLogo} alt="Bobbi" className="h-10 w-auto" />
+              </a>
             </div>
 
             {/* Desktop Navigation */}
