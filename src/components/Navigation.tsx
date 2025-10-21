@@ -33,6 +33,9 @@ const Navigation = () => {
               <a href="#trainers" className="text-secondary hover:text-primary transition-colors font-medium">
                 Trainers
               </a>
+              <a href="/about" className="text-secondary hover:text-primary transition-colors font-medium">
+                About
+              </a>
               <a href="#support" className="text-secondary hover:text-primary transition-colors font-medium">
                 Support
               </a>
@@ -80,6 +83,12 @@ const Navigation = () => {
                 className="block text-secondary hover:text-primary transition-colors font-medium py-2"
               >
                 Trainers
+              </a>
+              <a
+                href="/about"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                About
               </a>
               <a
                 href="#support"
