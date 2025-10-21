@@ -41,8 +41,8 @@ const Navigation = () => {
               <a href="/about" className="text-secondary hover:text-primary transition-colors font-medium">
                 About
               </a>
-              <a href="#support" className="text-secondary hover:text-primary transition-colors font-medium">
-                Support
+              <a href="/faq" className="text-secondary hover:text-primary transition-colors font-medium">
+                FAQ
               </a>
             </div>
 
@@ -102,10 +102,10 @@ const Navigation = () => {
                 About
               </a>
               <a
-                href="#support"
+                href="/faq"
                 className="block text-secondary hover:text-primary transition-colors font-medium py-2"
               >
-                Support
+                FAQ
               </a>
               <div className="pt-4 space-y-2">
                 <Button variant="ghost" className="w-full">
