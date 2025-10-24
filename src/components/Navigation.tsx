@@ -26,6 +26,9 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
+              <a href="/how-it-works" className="text-secondary hover:text-primary transition-colors font-medium">
+                How It Works
+              </a>
               <a href="/blog" className="text-secondary hover:text-primary transition-colors font-medium">
                 Blog
               </a>
@@ -65,6 +68,12 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-border bg-background">
             <div className="px-4 py-4 space-y-3">
+              <a
+                href="/how-it-works"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                How It Works
+              </a>
               <a
                 href="/blog"
                 className="block text-secondary hover:text-primary transition-colors font-medium py-2"
