@@ -38,6 +38,9 @@ const Navigation = () => {
               <a href="/blog" className="text-secondary hover:text-primary transition-colors font-medium">
                 Blog
               </a>
+              <a href="/podcast" className="text-secondary hover:text-primary transition-colors font-medium">
+                Podcast
+              </a>
               <a href="/about" className="text-secondary hover:text-primary transition-colors font-medium">
                 About
               </a>
@@ -94,6 +97,12 @@ const Navigation = () => {
                 className="block text-secondary hover:text-primary transition-colors font-medium py-2"
               >
                 Blog
+              </a>
+              <a
+                href="/podcast"
+                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
+              >
+                Podcast
               </a>
               <a
                 href="/about"
