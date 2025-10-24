@@ -26,15 +26,6 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#transformations" className="text-secondary hover:text-primary transition-colors font-medium">
-                Transformations
-              </a>
-              <a href="#programs" className="text-secondary hover:text-primary transition-colors font-medium">
-                Programs
-              </a>
-              <a href="#trainers" className="text-secondary hover:text-primary transition-colors font-medium">
-                Trainers
-              </a>
               <a href="/blog" className="text-secondary hover:text-primary transition-colors font-medium">
                 Blog
               </a>
@@ -74,24 +65,6 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-border bg-background">
             <div className="px-4 py-4 space-y-3">
-              <a
-                href="#transformations"
-                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
-              >
-                Transformations
-              </a>
-              <a
-                href="#programs"
-                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
-              >
-                Programs
-              </a>
-              <a
-                href="#trainers"
-                className="block text-secondary hover:text-primary transition-colors font-medium py-2"
-              >
-                Trainers
-              </a>
               <a
                 href="/blog"
                 className="block text-secondary hover:text-primary transition-colors font-medium py-2"
